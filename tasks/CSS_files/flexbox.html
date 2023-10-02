@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex CSS Properties</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                background-color: blanchedalmond;
+            }
+            .container1
+            {
+                background-color: black;
+                display: flex;
+                justify-content: space-around;
+                padding: 1rem;
+            }
+            .div1
+            {
+                /*background-color: yellow;*/
+                background-color: black;
+                color: aliceblue;
+                
+            }
+            .div2
+            {
+                /*background-color: orange;*/
+                background-color: black;
+                color: aliceblue;
+                
+            }
+            .div3
+            {
+                
+               /* background-color: greenyellow;*/
+               background-color: black;
+                color: aliceblue;
+            }
+            .div4
+            {
+              /*  background-color: burlywood;*/
+              background-color: black;
+                color: aliceblue;
+            }
+            .container2
+            {
+               /* margin-top:5%;*/
+                background-color: black;
+                display: flex;
+                align-items: center;
+                /*justify-content: space-around;*/
+                flex-direction: column;
+                
+                padding: 1rem;
+            }
+            .address1
+            {
+                background-color: black;
+                color: aliceblue;
+                /*align-self: center;*/
+                font-size: larger;
+                font-weight: bolder;
+            }
+            .address2
+            {
+                background-color: black;
+                color: aliceblue;
+                /*align-self: center;*/
+            }
+            .address3
+            {
+                background-color: black;
+                color: aliceblue;
+                /*align-self: center;*/
+            }
+            .address4
+            {
+                background-color: black;
+                color: aliceblue;
+                /*align-self: center;*/
+            }
+            
+        .photos
+         {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            
+            gap: 20px;
+            height: 365px;
+            overflow: auto;
+            justify-content:space-around;
+            padding-left: 30px;
+        }
+        
+        img 
+        {
+             max-width: 100%;
+             display: block;
+             height: 100%;
+             object-fit: cover;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="div1">Home</div>
+            <div class="div2">Github</div>
+            <div class="div3">LinkedIn</div>
+            <div class="div4">Contact</div>
+        </div>
+        <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: large;padding-top: 20px;"> Gallery </p> 
+        <div class="photos">
+            <img src="img/img_1.avif" alt="Photo" />
+            <img src="img/img_2.avif" alt="Photo" />
+            <img src="img/img_3.avif" alt="Photo" />
+            <img src="img/img_4.avif" alt="Photo" />
+            <img src="img/img_5.avif" alt="Photo" />
+            <img src="img/img_6.avif" alt="Photo" />
+        </div>
+          <div class="content">
+            <p style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: large;padding-top: 10px;">
+                This application, built with HTML, uses CSS properties.
+                It leverages CSS properties <br>
+                like flexbox for layout and rem units for scalable elements. The application ensures<br>
+                seamless user experience across different screen sizes.
+            </p>
+         
+          </div>
+        <div class="container2">
+            <div class="address1">Contact us:</div>
+            <div class="address2"> Post Box no: 13</div>
+            <div class="address3">Madipakkam</div>
+            <div class="address4">Chennai</div>
+        </div>
+       
+    </body>
+</html>
