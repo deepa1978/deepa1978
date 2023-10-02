@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border: 10px groove green;
+  margin-left: 40%;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">Re-arange the Order on Small Devices</h1>
+
+<p style="text-align: center;">Resize the window to 500 pixels see the effect.</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+</div>
+
+</body>
+</html>
