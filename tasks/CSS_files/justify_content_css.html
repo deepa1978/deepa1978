@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.gridcontainer
+  {
+    margin-top: 40px;
+    margin-left: 90px;
+    display: grid;
+    
+    
+   }
+
+  .container{
+    display:grid;
+    grid-template-columns: auto auto;
+    border: 2px solid black;
+    width:800px;
+    height: 100px;
+    box-sizing: content-box;
+  }
+  .item1{
+    border:2px solid black;
+    width: 300px;
+    padding: 30px;
+    
+  }
+  .item2{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    }
+  .item3{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .item4{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+  }
+  .item5{
+    display: flex;
+    justify-content: start;
+    width: 400px;
+  }
+  .item6{
+    display: flex;
+    justify-content: end;
+    width: 400px;
+
+  }
+</style> 
+<body>
+    <div class="gridcontainer">
+      <h3> Justify-Content with examples</h3>
+    <div class="container">
+      <div class="item1">Justify-content: Space-around</div>
+      <div class="item2">
+        <button class="button1">Button1</button>
+        <button class="button2">Button2</button>
+        <button class="button3">Button3</button>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="item1">Justify-content: Space-between</div>
+      <div class="item3">
+        <button class="button1">Button1</button>
+        <button class="button2">Button2</button>
+        <button class="button3">Button3</button>
+      </div>
+    </div>
+  
+   <div class="container">
+    <div class="item1">Justify-content: Center</div>
+    <div class="item4">
+      <button class="button1">Button1</button>
+      <button class="button2">Button2</button>
+      <button class="button3">Button3</button>
+   </div>
+    
+  </div>
+   <div class="container">
+      <div class="item1">Justify-content: Start</div>
+      <div class="item5">
+        <button class="button1">Button1</button>
+        <button class="button2">Button2</button>
+        <button class="button3">Button3</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="item1">Justify-content: End</div>
+      <div class="item6">
+        <button class="button1">Button1</button>
+        <button class="button2">Button2</button>
+        <button class="button3">Button3</button>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

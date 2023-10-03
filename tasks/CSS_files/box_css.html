@@ -2,22 +2,36 @@
 <html>
 <head>
 <style> 
+
+.gridcontainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: blanchedalmond;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  border:5px solid black;
+  width: 800px;
+  height: 500px;
+}
+
 .div1 {
   width: 300px;
   height: 100px;
   border-width: 5px;
   border: 5px dotted violet;
   box-sizing: border-box;
-  
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
 
 .div2 {
   width: 300px;
   height: 100px;  
   padding: 20px;
-  border: 5px double red;
+  border: 7px double red;
   box-sizing: border-box;
-  margin-top: 50px;
   color:white;
   background-color: black;
 }
@@ -28,31 +42,32 @@
   padding: 20px;
   border: 5px inset green;
   box-sizing: border-box;
-  margin-top: 50px;
-  color:darkmagenta; 
+  color:white;
+  background-color: blue; 
 }
 
 .div4 {
   width: 300px;
   height: 100px;  
-  padding: 30px;
-  border: 5px groove pink;
+  padding: 20px;
+  border: 5px groove red;
   box-sizing: content-box;
-  margin-top: 50px;
-  color:orangered
+  color:white;
+  background-color: blue;
+  
 }
 </style>
 </head>
 <body>
 
-<h1>With box-sizing : Border-box ,content-box</h1>
-
-<div class="div1">Both divs are the same size now! Border is dotted</div>
-<br>
-<div class="div2">Hooray! Border is doubled</div>
-
-<div class="div3"> Border is Inset</div>
-
-<div class="div4"> Border is Groove</div>
+  <h1>With box-sizing :Border-box ,content-box and 
+      <br> With different border styles: Dotted, Double, Inset, Groove
+  </h1>
+  <div class="gridcontainer">
+  <div class="div1">Both boxs are the same size now! Becas of box-sizing: Border-box</div>
+  <div class="div2">Hooray! Border is doubled</div>
+  <div class="div3"> Border is Inset and box-sizing is Border-box</div>
+  <div class="div4"> Border is Groove and box-sizing is Content-box</div>
+</div>
 </body>
 </html>
